@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accurate Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <!-- Search Bar (Optional Manual Search) -->
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Search city...">
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <!-- Main Current Weather Display -->
+        <div class="current-weather" id="currentWeather">
+            <h2 id="cityName">Detecting exact location...</h2>
+            <p id="weatherCondition">--</p>
+            <h1 id="tempDisplay">--°C</h1>
+        </div>
+
+        <!-- 5-Day Forecast Section -->
+        <div class="section-title">5-Day Forecast</div>
+        <div class="forecast-container" id="forecastContainer">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    background-color: #00838f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.weather-card {
+    background: #ffffff;
+    width: 380px;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 10px 16px;
+    background: #007791;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.current-weather h2 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 22px;
+}
+
+.current-weather p {
+    color: #666;
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.current-weather h1 {
+    font-size: 52px;
+    color: #007791;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #888;
+    margin: 15px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.forecast-card {
+    background: #f4f6f7;
+    padding: 12px 8px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.forecast-card small {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.forecast-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.forecast-card:hover, .forecast-card.active {
+    background: #007791;
+    color: white;
+}
+
+.forecast-card:hover small, .forecast-card:hover p,
+.forecast-card.active small, .forecast-card.active p {
+    color: white;
+}
